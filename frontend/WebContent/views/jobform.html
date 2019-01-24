@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<span style="color:red">{{error.message}}</span>
+<form>
+<pre>
+Enter Job Title: <input type="text" ng-model="job.jobTitle">
+Enter Job Description: <input type="text" ng-model="job.description">
+Enter Skills Required : <input type="text" ng-model="job.skillsRequired">
+Enter Location : <input type="text" ng-model="job.location">
+Enter Years of Experience : <input type="text" ng-model="job.yrsOfExp">
+Enter Company Name : <input type="text" ng-model="job.companyname">
+Enter Salary : <input type="text" ng-model="job.salary">
+Enter Posted Date:<input type="date" ng-model="job.postedOn">
+
+
+<button class="btn btn-lg btn-info" ng-click="addJob(job)">Post</button>
+</pre>
+</form>
+
+</body>
+</html>
